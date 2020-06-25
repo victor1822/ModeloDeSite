@@ -10,7 +10,7 @@ font-family: 'Ubuntu', sans-serif; */
     --my-light-blue: #01AEFA;
     --my-dark-pink: #F21667;
     --my-light-pink: #FAC8FB;
-    --my-background-color: #fac8fb79;
+    --my-background-color: #fac8fb;
 }
 
 *{
@@ -80,10 +80,6 @@ body header ul li a:hover{
     color: var(--my-dark-blue);
     cursor: pointer;
     background-color: var(--my-background-color);
-}
-
-body header.active ul li a:hover{
-    background-color: rgba(245, 245, 245, 0.522);
 }
 
 body #inicio{
