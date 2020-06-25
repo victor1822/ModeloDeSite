@@ -1,0 +1,185 @@
+/* Font-familly
+font-family: 'Amatic SC', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+:root{
+    --my-dark-blue: #003265;
+    --my-nav-color-top: #00326542;
+    --my-light-green: #31D4CF;
+    --my-light-blue: #01AEFA;
+    --my-dark-pink: #F21667;
+    --my-light-pink: #FAC8FB;
+    --my-background-color: #fac8fb79;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body{
+    height: calc(400vh);
+    display: grid;
+    grid-template-rows: calc(4.1em) calc(100vh - 4.1em) calc(100vh) calc(100vh) calc(100vh); 
+}
+
+body #contato{
+    grid-row-start: 5;
+    background-color: var(--my-light-green);
+}
+
+body header{
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    height: 4.1em;
+    width: 100%; /* Full width */
+    background-color: var(--my-nav-color-top);
+    display: flex;
+    justify-content: center;
+    transition: .5s;
+}
+
+body header.active{
+    background-color: var(--my-dark-blue);
+}
+
+body header ul{
+    flex: 1;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+body header ul li{
+    list-style-type: none;
+    padding: auto 1.45em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body header ul li a{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--my-light-pink);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    padding: auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+body header ul li a:hover{
+    color: var(--my-dark-blue);
+    cursor: pointer;
+    background-color: var(--my-background-color);
+}
+
+body header.active ul li a:hover{
+    background-color: rgba(245, 245, 245, 0.522);
+}
+
+body #inicio{
+    grid-row: 1 / span 2;
+    background: url(https://images.unsplash.com/photo-1482686115713-0fbcaced6e28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80) no-repeat center;
+    -webkit-background-size: auto;
+    -moz-background-size: fixed;
+    -o-background-size: cover;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 25% 15% 20% 15% 25%;
+    grid-template-rows: 25% 15% 20% 15% 25%;
+}
+
+body #inicio .card-titulo{
+    grid-row-start: 3;
+    grid-column-start: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: var(--my-background-color);
+    border-radius: 5px; */
+}
+
+body #inicio .card-titulo div h1{
+    font-size: 2.4em;
+    font-family: 'Amatic SC',cursive;
+    color: var(--my-dark-pink);
+}
+
+body #sobre{
+    grid-row-start: 3;
+    background-color: var(--my-light-pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body #sobre .sobre-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: calc( 100vh - 4.1em );
+}
+
+body #sobre .sobre-cards .card-left{
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+}
+
+body #sobre .sobre-cards .card-left figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body #sobre .sobre-cards figcaption{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family:  'Amatic SC', cursive;
+    font-size: 3em;
+    color: var(--my-dark-blue);
+}
+
+body #sobre .sobre-cards .card-left figure img{
+    height: 40vw;
+    width: 40vw;
+    object-fit: cover;
+    border-radius: 100%;
+    /* margin-top: calc(50vh - 20vw); */
+}
+
+body #sobre .sobre-cards .card-right{
+    /* height: 100%; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body #sobre .sobre-cards .card-right .text-content p{
+    color: var(--my-dark-blue);
+}
+
+body #trabalhos{
+    grid-row-start: 4;
+    background-color: var(--my-dark-pink);
+}
+
+p{
+    text-indent: 2em;
+    font-size: 1.2em;
+    line-height: 25px;
+}
