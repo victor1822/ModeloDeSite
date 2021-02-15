@@ -23,7 +23,7 @@ font-family: 'Ubuntu', sans-serif; */
 body{
     height: calc(400vh);
     display: grid;
-    grid-template-rows: calc(4.1em) calc(100vh - 4.1em) calc(100vh) calc(100vh) calc(100vh); 
+    grid-template-rows: calc(4.1em) calc(100vh) calc(100vh) calc(100vh) calc(100vh); 
 }
 
 body #contato{
@@ -65,8 +65,8 @@ body header ul li a{
     font-family: 'Open Sans', sans-serif;
     color: var(--my-light-pink);
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.3em;
+    text-transform: lowercase;
+    font-size: 1.4em;
     padding: auto;
     height: 100%;
     width: 100%;
@@ -84,11 +84,12 @@ body header ul li a:hover{
 
 body #inicio{
     grid-row: 1 / span 2;
-    background: url(https://images.unsplash.com/photo-1482686115713-0fbcaced6e28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80) no-repeat center;
+    /* background: url(https://images.unsplash.com/photo-1482686115713-0fbcaced6e28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80) no-repeat center;
     -webkit-background-size: auto;
     -moz-background-size: fixed;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; */
+    background-color: var(--my-dark-blue);
     display: grid;
     grid-template-columns: 25% 15% 20% 15% 25%;
     grid-template-rows: 25% 15% 20% 15% 25%;
@@ -144,8 +145,8 @@ body #sobre .sobre-cards figcaption{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-family:  'Amatic SC', cursive;
-    font-size: 3em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.8em;
     color: var(--my-dark-blue);
 }
 
@@ -171,7 +172,9 @@ body #sobre .sobre-cards .card-right .text-content p{
 
 body #trabalhos{
     grid-row-start: 4;
-    background-color: var(--my-dark-pink);
+    /* background-color: var(--my-dark-pink); */
+    /* background-color: rgb(230, 230, 230); */
+    background-color: rgb(255, 233, 255);
 }
 
 html{
